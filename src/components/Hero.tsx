@@ -6,47 +6,52 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden">
 
-      {/* GIF de fundo */}
-      <img
+      {/* GIF de fundo com leve flutuação */}
+      <motion.img
         src={gipphy}
         alt="Background GIF"
         className="absolute inset-0 w-full h-full object-cover -z-10"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Overlay escura para melhorar legibilidade */}
+      {/* Overlay escura */}
       <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
-      {/* Conteúdo animado */}
-      <motion.h1
-        variants={fadeUp}
+      {/* Conteúdo animado com stagger */}
+      <motion.div
+        className="z-10 flex flex-col items-center"
         initial="hidden"
         animate="visible"
-        className="text-5xl font-bold text-white z-10"
+        variants={{
+          visible: { transition: { staggerChildren: 0.2 } },
+        }}
       >
-        Hi, I'm <span className="text-indigo-500">&lt;Jonas Gomes/&gt;</span>
-      </motion.h1>
+        <motion.h1
+          variants={fadeUp}
+          className="text-5xl font-bold text-white"
+        >
+          Hi, I'm <span className="text-indigo-500">&lt;Jonas Gomes/&gt;</span>
+        </motion.h1>
 
-      <motion.p
-        variants={fadeUp}
-        initial="hidden"
-        animate="visible"
-        transition={{ delay: 0.2 }}
-        className="mt-4 text-zinc-100 text-lg z-10 max-w-xl"
-      >
-      Web Applications • Backend • Frontend • APIs
-      </motion.p>
+        <motion.p
+          variants={fadeUp}
+          className="mt-4 text-zinc-100 text-lg max-w-xl"
+        >
+          Web Applications • Backend • Frontend • APIs
+        </motion.p>
 
-      <motion.a
-        variants={fadeUp}
-        initial="hidden"
-        animate="visible"
-        transition={{ delay: 0.4 }}
-        href="#projects"
-        className="mt-8 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 z-10"
-      >
-        View My Projects
-      </motion.a>
-
+        {/* Botão separado com margin-top */}
+        <motion.a
+          variants={fadeUp}
+          href="#projects"
+          className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow-lg"
+          whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(79, 70, 229, 0.6)" }}
+          whileTap={{ scale: 0.95 }}
+        >
+          View My Projects
+        </motion.a>
+      </motion.div>
     </section>
   );
 }
