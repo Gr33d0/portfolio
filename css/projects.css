@@ -1,0 +1,177 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px; /* ajusta o espaçamento interno */
+}
+
+.projects .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-items: center; /* centraliza horizontalmente */
+  align-items: start;    /* inicia no topo, ou use center para centralizar vertical */
+}
+
+/* CARD */
+.project-card {
+  background: #0f172a;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card:hover video {
+  opacity: 0.9;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  color: #93c5fd;
+  margin-bottom: 8px;
+}
+
+.project-info p {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+}
+
+/* MODAL */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.project-modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #020617;
+  max-width: 900px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  animation: scaleIn 0.3s ease;
+}
+
+.modal-content video {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-content h3 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10; /* garantir que está acima de tudo */
+}
+
+/* ANIMATION */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* CARD WIP */
+.wip-card {
+  background: #0f172a;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  height: 100%;             /* igual aos outros cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* ou center se quiser o conteúdo centralizado verticalmente */
+}
+
+
+.wip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+
+/* Placeholder com altura igual ao vídeo */
+.wip-video-placeholder {
+  background: #1e293b;
+  height: 180px;
+  width: 100%;             /* igual aos vídeos dos outros cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wip-video-placeholder h3 {
+  color: #facc15;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+/* Project info abaixo do WIP */
+.project-info {
+  padding: 15px 20px;
+}
+
+.project-info h3 {
+  color: #93c5fd;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.project-info p {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,83 @@
+/* ===== Resume Section ===== */
+.resume {
+  padding: 80px 20px;
+  color: #cbd5f5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.resume .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== Sections ===== */
+.resume-sections {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.experience, .education {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ===== Titles ===== */
+h2 {
+  margin-bottom: 15px;
+  color: #93c5fd; /* Azul suave como no contact */
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 5px;
+}
+
+/* ===== Items ===== */
+.item {
+  background: #11121c;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.item h3 {
+  margin: 0 0 5px 0;
+  color: #60a5fa;
+  font-size: 1.3em;
+}
+
+.item span {
+  display: block;
+  font-size: 0.9em;
+  color: #93c5fd;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.item p {
+  margin: 0 0 5px 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #cbd5f5;
+}
+
+/* Destacar tecnologias */
+.item p:last-child {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .resume-sections {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
