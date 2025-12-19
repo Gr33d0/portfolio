@@ -1,0 +1,20 @@
+/* Estados iniciais */
+.fade-up, .fade-left, .fade-right {
+  opacity: 0;
+  transform: translateY(20px); /* padrão para fade-up */
+  transition: all 0.8s ease-out;
+}
+
+.fade-left {
+  transform: translateX(-20px);
+}
+
+.fade-right {
+  transform: translateX(20px);
+}
+
+/* Quando visível */
+.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
