@@ -2,7 +2,11 @@
 
   padding-bottom: 100px;
 }
-
+.contact .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .contact h2 {
   margin-bottom: 15px;
   color: #93c5fd;

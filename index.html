@@ -14,11 +14,9 @@
     <link rel="stylesheet" href="css/education.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/about+skills.css" />
-
-
   </head>
   <body>
-  <div id="particles-js"></div>
+    <div id="particles-js"></div>
     <header>
       <nav class="navbar">
         <div class="logo">Jonas Gomes</div>
@@ -33,97 +31,99 @@
         <div class="menu-toggle" id="menu-toggle">☰</div>
       </nav>
     </header>
-    
-    <section id="hero" class="hero ">
+
+    <section id="hero" class="hero">
       <div class="container">
         <div class="hero-content">
           <h1>Hi, I'm <span>&lt;Jonas Gomes/&gt;</span></h1>
           <h2>Web Developer</h2>
-          <p>Turning ideas into modern, user-friendly, and high-performing applications.</p>
+          <p>
+            Turning ideas into modern, user-friendly, and high-performing
+            applications.
+          </p>
 
           <div class="hero-buttons">
-
             <a href="#projects" class="btn primary">View Projects</a>
- 
           </div>
         </div>
       </div>
     </section>
 
-<div class="about-skills-wrapper">
-  <section id="about" class="about fade-up">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>
-            I am a passionate web developer focused on building modern,
-            efficient, and user-friendly applications. I enjoy transforming
-            ideas into functional and visually appealing digital experiences.
-          </p>
-          <p>
-            I have over 6 years of practical experience working with both frontend and backend technologies, always aiming for clean code, performance, and accessibility. I am constantly learning and improving my skills to stay up to date with modern development practices.
-          </p>
+    <div class="about-skills-wrapper">
+      <section id="about" class="about fade-up">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>
+                I am a passionate web developer focused on building modern,
+                efficient, and user-friendly applications. I enjoy transforming
+                ideas into functional and visually appealing digital
+                experiences.
+              </p>
+              <p>
+                I have over 6 years of practical experience working with both
+                frontend and backend technologies, always aiming for clean code,
+                performance, and accessibility. I am constantly learning and
+                improving my skills to stay up to date with modern development
+                practices.
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="me.jpeg" alt="Profile picture" />
+            </div>
+          </div>
         </div>
-        <div class="about-image">
-          <img src="me.jpeg" alt="Profile picture" />
+      </section>
+
+      <section id="skills" class="skills fade-up">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 / Flexbox / Grid</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Bootstrap / Tailwind</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js / Express</li>
+                <li>Python / Flask</li>
+                <li>REST APIs</li>
+                <li>GraphQL</li>
+                <li>Authentication (JWT)</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Databases</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Firebase</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Tools & Others</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Docker (basic)</li>
+                <li>Linux</li>
+                <li>API Integration</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
-
-  <section id="skills" class="skills fade-up">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-  <div class="skill-card">
-    <h3>Frontend</h3>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3 / Flexbox / Grid</li>
-      <li>JavaScript (ES6+)</li>
-      <li>Bootstrap / Tailwind</li>
-    </ul>
-  </div>
-
-  <div class="skill-card">
-    <h3>Backend</h3>
-    <ul>
-      <li>Node.js / Express</li>
-      <li>Python / Flask</li>
-      <li>REST APIs</li>
-      <li>GraphQL</li>
-      <li>Authentication (JWT)</li>
-    </ul>
-  </div>
-
-  <div class="skill-card">
-    <h3>Databases</h3>
-    <ul>
-      <li>PostgreSQL</li>
-      <li>MySQL</li>
-      <li>Firebase</li>
-      <li>MongoDB</li>
-    </ul>
-  </div>
-
-  <div class="skill-card">
-    <h3>Tools & Others</h3>
-    <ul>
-      <li>Git & GitHub</li>
-      <li>Docker (basic)</li>
-      <li>Linux</li>
-      <li>API Integration</li>
-    </ul>
-  </div>
-</div>
-
-    </div>
-  </section>
-</div>
-
-
-
 
     <section id="projects" class="projects fade-up">
       <div class="container">
@@ -163,115 +163,134 @@
             </div>
           </div>
           <div
-  class="project-card wip-card"
-  data-title="Table of vacancies"
-  data-description="Web application to manage job applications, allowing users to add, edit, and delete job vacancies."
->
-  <div class="wip-video-placeholder">
-    <h3>WIP</h3>
-  </div>
+            class="project-card"
+            data-title="Table of vacancies"
+            data-description="Web application to manage job applications, allowing users to add, edit, and delete job vacancies."
+            data-video="/videos/TableOfVacancies.mp4"
+          >
+            <video src="/videos/TableOfVacancies.mp4" muted loop></video>
 
-  <div class="project-info">
-    <h3>Table of vacancies</h3>
-    <p>
-      Web application to manage job applications, allowing users to
-      add, edit, and delete job vacancies.
-    </p>
-  </div>
-</div>
-
+            <div class="project-info">
+              <h3>Table of vacancies</h3>
+              <p>
+                Web application to manage job applications, allowing users to
+                add, edit, and delete job vacancies.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
     <!-- MODAL -->
-<div class="project-modal" id="project-modal">
-  <div class="modal-content">
-    <span class="close-modal" id="close-modal">&times;</span>
+    <div class="project-modal" id="project-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
 
-    <video id="modal-video" controls autoplay></video>
-    <img id="modal-image" style="width:100%; display:none; border-radius:15px;" alt="">
+        <video id="modal-video" controls autoplay></video>
+        <img
+          id="modal-image"
+          style="width: 100%; display: none; border-radius: 15px"
+          alt=""
+        />
 
-    <h3 id="modal-title"></h3>
-    <p id="modal-description"></p>
-  </div>
-</div>
-
-<section class="resume fade-up">
-  <div class="container">
-    <div class="resume-sections">
-      <!-- Experience Section -->
-      <div class="experience">
-        <h2>Experience</h2>
-        <div class="item">
-          <h3>Web Development Internship</h3>
-          <span>ByBruno · Portimão | Mar 2021 – Set 2021 · 6 months</span>
-          <p>Developed web applications, integrated APIs, maintained databases, and implemented features to optimize internal company processes.</p>
-            <p>HTML/CSS · Javascript · PHP · JQuery</p>
-        </div>
-
-      </div>
-
-      <!-- Education Section -->
-      <div class="education">
-        <h2>Education</h2>
-        <div class="item">
-          <h3>Professional Course in Management and Computer Systems</h3>
-          <span>10th — 12th Grade · Manuel Teixeira Gomes | 2019 — 2022</span>
-          <p>Practical and theoretical training in IT management, software development, databases, networks, and digital technologies applied to business environments.</p>
-        </div>
-        <div class="item">
-          <h3>Computer Engineering</h3>
-          <span>Bachelor Degree · ISMAT, Portimão | 2023 — 2025</span>
-          <p>Solid academic background in software development, algorithms, data structures, databases, and computer systems, with a strong focus on problem-solving and practical projects.</p>
-        </div>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
       </div>
     </div>
-  </div>
-</section>
 
+    <section class="resume fade-up">
+      <div class="container">
+        <div class="resume-sections">
+          <!-- Experience Section -->
+          <div class="experience">
+            <h2>Experience</h2>
+            <div class="item">
+              <h3>Web Development Internship</h3>
+              <span>ByBruno · Portimão | Mar 2021 – Set 2021 · 6 months</span>
+              <p>
+                Developed web applications, integrated APIs, maintained
+                databases, and implemented features to optimize internal company
+                processes.
+              </p>
+              <p>HTML/CSS · Javascript · PHP · JQuery</p>
+            </div>
+          </div>
 
-<section id="contact" class="contact fade-up">
-  <div class="container">
-    <h2>Contact Me</h2>
-    
-    <p>Feel free to reach out to me via any of the channels below:</p>
-    
-    <div class="contact-cards">
-      
-      <div class="contact-card">
-        <span class="contact-icon">📧</span>
-        <h3>Email</h3>
-        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <!-- Education Section -->
+          <div class="education">
+            <h2>Education</h2>
+            <div class="item">
+              <h3>Professional Course in Management and Computer Systems</h3>
+              <span
+                >10th — 12th Grade · Manuel Teixeira Gomes | 2019 — 2022</span
+              >
+              <p>
+                Practical and theoretical training in IT management, software
+                development, databases, networks, and digital technologies
+                applied to business environments.
+              </p>
+            </div>
+            <div class="item">
+              <h3>Computer Engineering</h3>
+              <span>Bachelor Degree · ISMAT, Portimão | 2023 — 2025</span>
+              <p>
+                Solid academic background in software development, algorithms,
+                data structures, databases, and computer systems, with a strong
+                focus on problem-solving and practical projects.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-card">
-        <span class="contact-icon">📱</span>
-        <h3>Phone</h3>
-        <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+    <section id="contact" class="contact fade-up">
+      <div class="container">
+        <h2>Contact Me</h2>
+
+        <p>Feel free to reach out to me via any of the channels below:</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <span class="contact-icon">📧</span>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:gjonas375@gmail.com">gjonas375@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">📱</span>
+            <h3>Phone</h3>
+            <p><a href="tel:+351961532751">+351 961 532 751</a></p>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">💼</span>
+            <h3>LinkedIn</h3>
+            <p>
+              <a href="https://www.linkedin.com/in/jonas-gomes-pt/" target="_blank"
+                >https://www.linkedin.com/in/jonas-gomes-pt/</a
+              >
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">🐱</span>
+            <h3>GitHub</h3>
+            <p>
+              <a href="https://github.com/yourusername" target="_blank"
+                >github.com/Gr33d0</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-card">
-        <span class="contact-icon">💼</span>
-        <h3>LinkedIn</h3>
-        <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-      </div>
-
-      <div class="contact-card">
-        <span class="contact-icon">🐱</span>
-        <h3>GitHub</h3>
-        <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <footer>© 2025 - Jonas Gomes| All rights reserved.</footer>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="js/script.js" ></script>
+    <footer>© 2026 - Jonas Gomes| All rights reserved.</footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
